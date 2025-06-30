@@ -153,7 +153,7 @@ configuration variables can be used to configure a different clock tree:
     <td><tt>LSI_Enabled</tt></td>
     <td>
       <tt>true</tt>,
-      <tt>false</tt>,
+      <tt>false</tt>
     </td>
     <td><tt>true</tt></td>
     <td>
@@ -165,7 +165,7 @@ configuration variables can be used to configure a different clock tree:
     <td><tt>LSE_Enabled</tt></td>
     <td>
       <tt>true</tt>,
-      <tt>false</tt>,
+      <tt>false</tt>
     </td>
     <td><tt>true</tt></td>
     <td>
@@ -177,7 +177,7 @@ configuration variables can be used to configure a different clock tree:
     <td><tt>HSE_Bypass</tt></td>
     <td>
       <tt>true</tt>,
-      <tt>false</tt>,
+      <tt>false</tt>
     </td>
     <td><tt>false</tt></td>
     <td>
@@ -191,7 +191,7 @@ configuration variables can be used to configure a different clock tree:
     <td><tt>LSE_Bypass</tt></td>
     <td>
       <tt>true</tt>,
-      <tt>false</tt>,
+      <tt>false</tt>
     </td>
     <td><tt>false</tt></td>
     <td>
@@ -215,7 +215,7 @@ configuration variables can be used to configure a different clock tree:
     <td><tt>PLL_Src</tt></td>
     <td>
       <tt>"HSE"</tt>,
-      <tt>"HSI16"</tt>,
+      <tt>"HSI16"</tt>
     </td>
     <td><tt>HSI16</tt></td>
     <td>
