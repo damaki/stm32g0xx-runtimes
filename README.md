@@ -76,25 +76,6 @@ The following variables configure the specific STM32G0 MCU that is being targete
     </td>
   </tr>
   <tr>
-    <td><tt>MCU_Pin_Count</tt></td>
-    <td>
-      <tt>"C"</tt>,
-      <tt>"F"</tt>,
-      <tt>"G"</tt>,
-      <tt>"J"</tt>,
-      <tt>"K"</tt>,
-      <tt>"M"</tt>,
-      <tt>"N"</tt>,
-      <tt>"R"</tt>,
-      <tt>"V"</tt>
-    </td>
-    <td><tt>"R"</tt></td>
-    <td>
-      Specifies the pin count part of the STM32G0 part number.
-      For example, this is the "R" in "STM32G0B1RE".
-    </td>
-  </tr>
-  <tr>
     <td><tt>MCU_Flash_Memory_Size</tt></td>
     <td>
       <tt>"4"</tt>,
@@ -106,7 +87,7 @@ The following variables configure the specific STM32G0 MCU that is being targete
     </td>
     <td><tt>"B"</tt></td>
     <td>
-      Specifies the "user code memory size" part of the STM32G0 part number.
+      Specifies the "flash memory size" part of the STM32G0 part number.
       For example, this is the "E" in "STM32G0B1RE".
     </td>
   </tr>
@@ -119,7 +100,6 @@ STM32G031J4:
 ```toml
 [configuration.values]
 light_tasking_stm32g0xx.MCU_Sub_Family        = "G031"
-light_tasking_stm32g0xx.MCU_Pin_Count         = "J"
 light_tasking_stm32g0xx.MCU_Flash_Memory_Size = "4"
 ```
 

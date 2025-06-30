@@ -40,7 +40,6 @@ STM32G031J4, add the following to your `alire.toml`:
 ```toml
 [configuration.values]
 $(profile_underscored)_$(target).MCU_Sub_Family        = "G031"
-$(profile_underscored)_$(target).MCU_Pin_Count         = "J"
 $(profile_underscored)_$(target).MCU_Flash_Memory_Size = "4"
 ```
 
@@ -108,7 +107,6 @@ output_dir = "gnat_user"
 
 [configuration.variables]
 MCU_Sub_Family = { type = "Enum", values = ["G030", "G031", "G041", "G050", "G051", "G061", "G070", "G071", "G081", "G0B0", "G0B1", "G0C1"], default = "G0B1" }
-MCU_Pin_Count = { type = "Enum", values = ["C", "F", "G", "J", "K", "M", "N", "R", "V"], default = "R" }
 MCU_Flash_Memory_Size = { type = "String", default = "B" }
 
 RAM_Parity_Check = { type = "Enum", values = ["Disabled", "Enabled"], default = "Disabled" }

@@ -37,9 +37,6 @@ project Runtime_Build is
 
   --  Determine the RAM size
 
-  MCU_Suffix := $(profile_underscored)_Stm32g0xx_Config.MCU_Pin_Count
-                & $(profile_underscored)_Stm32g0xx_Config.MCU_Flash_Memory_Size;
-
   case $(profile_underscored)_Stm32g0xx_Config.MCU_Sub_Family is
      when "G030" | "G031" | "G041" =>
         RAM_Size := "8";
