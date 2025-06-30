@@ -380,7 +380,7 @@ The following variables configure the interrupt stack sizes:
 
 ### GPR Scenario Variables
 
-The runtime project files expose `*_BUILD` and and `*_LIBRARY_TYPE` GPR
+The runtime project files expose `*_BUILD` and `*_LIBRARY_TYPE` GPR
 scenario variables to configure the build mode (e.g. debug/production) and
 library type. These variables are prefixed with the name of the runtime in
 upper case. For example, for the light-tasking-stm32g0xx runtime the variables
