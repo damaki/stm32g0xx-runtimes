@@ -48,6 +48,7 @@ class Stm32G0(arm.cortexm.CortexM0P):
             "stm32g0_src/s-bbpara.ads",
             "stm32g0_src/s-bbbopa.ads",
             "stm32g0_src/s-bbmcpa.ads",
+            "stm32g0_src/svd/handler.S",
             "stm32g0_src/svd/i-stm32.ads",
             "stm32g0_src/svd/i-stm32-flash.ads",
             "stm32g0_src/svd/i-stm32-rcc.ads",
