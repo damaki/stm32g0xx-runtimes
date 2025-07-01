@@ -36,8 +36,8 @@
 
 /* This is a ARM specific version of this file */
 
-include memory-ROM.ld
-include memory-RAM.ld
+INCLUDE memory-ROM.ld
+INCLUDE memory-RAM.ld
 
 /* This script replaces ld's default linker script, providing the
    appropriate memory map and output format. */
