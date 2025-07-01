@@ -108,6 +108,8 @@ procedure Setup_Pll is
          elsif Main_Clock_Frequency <= 48_000_000 then 1
          else  2);
 
+      SW_Value : CFGR_SW_Field;
+
    begin
 
       if not HSE_Enabled then
@@ -211,21 +213,20 @@ procedure Setup_Pll is
 
       --  Switch over to the desired clock source
 
-      RCC_Periph.CFGR.SW :=
-        (case Config.SYSCLK_Src is
-           when Config.HSISYS  => 2#000#,
-           when Config.HSE     => 2#001#,
-           when Config.PLLRCLK => 2#010#,
-           when Config.LSI     => 2#011#,
-           when Config.LSE     => 2#100#);
+      SW_Value := (case Config.SYSCLK_Src is
+                     when Config.HSISYS  => 2#000#,
+                     when Config.HSE     => 2#001#,
+                     when Config.PLLRCLK => 2#010#,
+                     when Config.LSI     => 2#011#,
+                     when Config.LSE     => 2#100#);
 
-      if Activate_PLL then
-         --  Wait for the SYSCLK to switch over to PLLRCLK
+      RCC_Periph.CFGR.SW := SW_Value;
 
-         loop
-            exit when RCC_Periph.CFGR.SWS = 2#010#;
-         end loop;
-      end if;
+      --  Wait for the SYSCLK to switch over to the requested clock source
+
+      loop
+         exit when RCC_Periph.CFGR.SWS = SW_Value;
+      end loop;
    end Initialize_Clocks;
 
    ------------------
