@@ -104,8 +104,8 @@ procedure Setup_Pll is
            & " 64 MHz");
 
       FLASH_Latency : constant :=
-        (if    Main_Clock_Frequency <= 24_000_000 then 0
-         elsif Main_Clock_Frequency <= 48_000_000 then 1
+        (if    SYSCLK_Freq <= 24_000_000 then 0
+         elsif SYSCLK_Freq <= 48_000_000 then 1
          else  2);
 
       SW_Value : CFGR_SW_Field;
