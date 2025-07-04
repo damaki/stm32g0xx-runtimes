@@ -93,16 +93,16 @@ package System.BB.Board_Parameters is
         when STM32G0xx_Runtime_Config.HSISYS  => HSI_Freq / HSI_Div);
 
    HCLK_Freq : constant :=
-     SYSCLK_Freq / (case STM32G4xx_Runtime_Config.AHB_Pre is
-                      when STM32G4xx_Runtime_Config.DIV1   => 1,
-                      when STM32G4xx_Runtime_Config.DIV2   => 2,
-                      when STM32G4xx_Runtime_Config.DIV4   => 4,
-                      when STM32G4xx_Runtime_Config.DIV8   => 8,
-                      when STM32G4xx_Runtime_Config.DIV16  => 16,
-                      when STM32G4xx_Runtime_Config.DIV64  => 64,
-                      when STM32G4xx_Runtime_Config.DIV128 => 128,
-                      when STM32G4xx_Runtime_Config.DIV256 => 256,
-                      when STM32G4xx_Runtime_Config.DIV512 => 512);
+     SYSCLK_Freq / (case STM32G0xx_Runtime_Config.AHB_Pre is
+                      when STM32G0xx_Runtime_Config.DIV1   => 1,
+                      when STM32G0xx_Runtime_Config.DIV2   => 2,
+                      when STM32G0xx_Runtime_Config.DIV4   => 4,
+                      when STM32G0xx_Runtime_Config.DIV8   => 8,
+                      when STM32G0xx_Runtime_Config.DIV16  => 16,
+                      when STM32G0xx_Runtime_Config.DIV64  => 64,
+                      when STM32G0xx_Runtime_Config.DIV128 => 128,
+                      when STM32G0xx_Runtime_Config.DIV256 => 256,
+                      when STM32G0xx_Runtime_Config.DIV512 => 512);
 
    Main_Clock_Frequency : constant Positive := HCLK_Freq;
    --  Frequency of the system clock (SYSCLK)
