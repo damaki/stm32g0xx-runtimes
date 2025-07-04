@@ -217,7 +217,7 @@ configuration variables can be used to configure a different clock tree:
       <tt>"HSE"</tt>,
       <tt>"HSI16"</tt>
     </td>
-    <td><tt>HSI16</tt></td>
+    <td><tt>"HSI16"</tt></td>
     <td>
       Specifies the clock source to use for the input into the PLL.
       <ul>
@@ -308,7 +308,7 @@ configuration variables can be used to configure a different clock tree:
       <tt>"DIV256"</tt>,
       <tt>"DIV512"</tt>
     </td>
-    <td><tt>DIV1</tt></td>
+    <td><tt>"DIV1"</tt></td>
     <td>
       Specifies the divider to use for the AHB prescaler.
     </td>
@@ -322,7 +322,7 @@ configuration variables can be used to configure a different clock tree:
       <tt>"DIV8"</tt>,
       <tt>"DIV16"</tt>
     </td>
-    <td><tt>DIV1</tt></td>
+    <td><tt>"DIV1"</tt></td>
     <td>
       Specifies the divider to use for the APB prescaler.
     </td>
