@@ -283,7 +283,7 @@ configuration variables can be used to configure a different clock tree:
       <tt>"PLLRCLK"</tt>,
       <tt>"HSISYS"</tt>
     </td>
-    <td><tt>HSISYS</tt></td>
+    <td><tt>"PLLRCLK"</tt></td>
     <td>
       Specifies the clock source to use for the system clock (SYSCLK).
       <ul>
